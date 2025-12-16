@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Постников — Веб-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Александр Постников</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="section hero">
+        <div class="container">
+            <h1>Привет! Я Александр Постников</h1>
+            <p>Начинающий веб-разработчик, увлекающийся визуализацией и созданием красивых сайтов</p>
+            <a href="#contact" class="btn">Связаться со мной</a>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Я изучаю HTML, CSS и JavaScript, чтобы создавать современные и функциональные веб-сайты. Моя цель — делать цифровые продукты, которые радуют глаз и удобны в использовании.</p>
+            <h3>Навыки</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid, адаптивность)</li>
+                <li>JavaScript (основы, работа с DOM)</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Личное портфолио</h3>
+                    <p>Адаптивный сайт-визитка с формой обратной связи</p>
+                </div>
+                <div class="project-card">
+                    <h3>Счётчик кликов</h3>
+                    <p>Интерактивный элемент на JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Свяжитесь со мной</h2>
+            <form class="contact-grid">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="statusMessage"></p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Александр Постников</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
